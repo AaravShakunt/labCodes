@@ -1,0 +1,39 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+
+bool chk(string str){
+    stack<char> stk;
+
+    for(int i=0;i<str.length();i++){
+        char parop[3] = {'(', '{', '['};
+        char parclos[3] = {')', '}', ']'};
+        if(str[i]=='{'||str[i]=='('||str[i]=='['){
+            stk.push(str[i]);
+        }
+        else if (str[i]=='}'||str[i]==']'||str[i]==')'){
+            char par = stk.top();
+            for(int j=0;j<3;j++){
+                if (parop[j]==par){
+                    if (par=parclos[j]){
+                        continue;
+                    }
+                    else{
+                        return false;
+                    }
+                }
+            }
+            stk.pop();
+        }
+    }
+    if (!stk.empty()){
+        return false;
+    }
+    return true;
+}
+
+int main(){
+    string exp = "{(asdas)}[]";
+    cout<<chk(exp);
+
+}
