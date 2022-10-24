@@ -1,0 +1,20 @@
+//https://www.codingninjas.com/codestudio/problems/insert-an-element-at-its-bottom-in-a-given-stack_1171166?topList=love-babbar-dsa-sheet-problems&utm_source=website&utm_medium=affiliate&utm_campaign=450dsatracker&leftPanelTab=1
+
+#include <bits/stdc++.h> 
+stack<int> pushAtBottom(stack<int>& myStack, int x) 
+{
+    // Write your code here.
+    
+    stack<int> s2;
+    
+    while(!myStack.empty()){
+        s2.push(myStack.top());
+        myStack.pop();
+    }
+    s2.push(x);
+    while(!s2.empty()){
+        myStack.push(s2.top());
+        s2.pop();
+    }
+    return myStack;
+}
