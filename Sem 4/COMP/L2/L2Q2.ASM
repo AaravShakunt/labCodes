@@ -11,13 +11,15 @@ Code Segment
 
         LEA SI, array1
         LEA DI, array2
-        add SI, 04H
-        add DI, 01H
+        add SI, 09H
+        add DI, 03H
         mov cx, 05H
         BACK:
             mov BX, [SI]
             mov [DI], BX
             DEC SI
+            DEC SI
+            DEC DI
             DEC DI
             Loop back
        mov AH,4CH
