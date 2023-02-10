@@ -11,8 +11,8 @@ Code Segment
 
         LEA SI, array1
         LEA DI, array2
-        add SI, 09H
-        add DI, 03H
+        add SI, 08H
+        add DI, 02H
         mov cx, 05H
         BACK:
             mov BX, [SI]
