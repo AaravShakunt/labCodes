@@ -1,0 +1,156 @@
+# pwd
+/home/STUDENT2
+
+#cat output.txt
+#pwd
+/home/STUDENT2
+
+#ls
+210911180
+Desktop
+Documents
+Downloads
+Music
+myfiles.txt
+OS LAB MANUAL 2022.pdf
+output.txt
+Pictures
+Public
+Templates
+Videos
+
+#head --lines=2 output.txt
+#pwd
+/home/STUDENT2
+
+#ls -l
+total 1704
+drwxrwxr-x 4 STUDENT2 STUDENT2    4096 Feb  1 14:40 210911180
+drwx------ 2 STUDENT2 STUDENT2    4096 Dec 15 12:39 Desktop
+drwx------ 2 STUDENT2 STUDENT2    4096 Dec 15 12:39 Documents
+drwx------ 2 STUDENT2 STUDENT2    4096 Dec 15 12:39 Downloads
+drwx------ 2 STUDENT2 STUDENT2    4096 Dec 15 12:39 Music
+-rw-rw-r-- 1 STUDENT2 STUDENT2     102 Feb  1 14:36 myfiles.txt
+-rw-rw-r-- 1 STUDENT2 STUDENT2 1699799 Feb  1 14:31 OS LAB MANUAL 2022.pdf
+-rw-rw-r-- 1 STUDENT2 STUDENT2     193 Feb  1 14:57 output.txt
+drwx------ 2 STUDENT2 STUDENT2    4096 Dec 15 12:39 Pictures
+drwx------ 2 STUDENT2 STUDENT2    4096 Dec 15 12:39 Public
+drwx------ 2 STUDENT2 STUDENT2    4096 Dec 15 12:39 Templates
+drwx------ 2 STUDENT2 STUDENT2    4096 Dec 15 12:39 Videos
+
+#ls -a
+.
+..
+210911180
+.bash_logout
+.bashrc
+.cache
+.config
+Desktop
+Documents
+Downloads
+.gnupg
+.local
+.mozilla
+Music
+myfiles.txt
+OS LAB MANUAL 2022.pdf
+output.txt
+Pictures
+.profile
+Public
+Templates
+Videos
+
+#ls -ld
+drwx------ 16 STUDENT2 STUDENT2 4096 Feb  1 15:03 .
+
+
+ls /home/STUDENT2/210911180/L*
+output.txt
+
+#file output.txt
+output.txt: ASCII text
+
+
+#tail outputt.txt >> outputt.txt
+#ls -ld
+drwx------ 16 STUDENT2 STUDENT2 4096 Feb  1 15:03 .
+
+
+ls /home/STUDENT2/210911180/L*
+output.txt
+
+#file output.txt
+output.txt: ASCII text
+
+#cat myfiles.txt
+Test file
+this 
+is
+test
+
+#cat -n myfiles.txt
+     1	Test file
+     2	this 
+     3	is
+     4	test
+
+#cat - A myfiles.txt
+Test file$
+this $
+is$
+test$
+Test file$
+this $
+is$
+test$
+
+
+Q3:
+find -name "*.txt"
+->./f1.txt
+
+find -name "#[0-9]"	
+
+find -name "*????*"
+->.	/q3.sh
+	./f1.txt
+	./q5.sh
+	./q1.sh
+	./q6.sh
+	./q2.sh
+	./newfolder
+	./newfolder/a3.folder
+	./newfolder/a1.folder
+	./newfolder/a2.folder
+	./newfolder/folder
+	./newfolder/folder/folderinside
+	./newfolder/folder/test.text
+	./q7.sh
+	./folder
+	./folder/folderinside
+	./folder/test.text
+	./q4.sh
+	
+find -name "[!aeiou]*"
+	.
+	./q3.sh
+	./f1.txt
+	./q5.sh
+	./q1.sh
+	./q6.sh
+	./q2.sh
+	./newfolder
+	./newfolder/a3.folder
+	./newfolder/a1.folder
+	./newfolder/a2.folder
+	./newfolder/folder
+	./newfolder/folder/folderinside
+	./newfolder/folder/test.text
+	./q7.sh
+	./folder
+	./folder/folderinside
+	./folder/test.text
+	./q4.sh
+
